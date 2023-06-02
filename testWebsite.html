@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>gridTest</title>
+  <link href='https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap' rel="stylesheet">
+</head>
+<body>
+    <header>
+    <h2>Responsive</h2>
+    <nav>
+        <ul id="navLinks">
+            <li>
+                <a href="">Services</a>
+            </li>
+            <li>
+                <a href="">Projects</a>
+            </li>
+            <li>
+                <a href="">About</a>
+            </li>
+        </ul>
+    </nav>
+    <a class="cta" href="#">Contact</a>
+    <p class="menu cta">Menu</p>
+    </header>
+    <div class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+
+<script>
+const doc = document;
+
+const menuOpen=doc.querySelector('.menu');
+const menuClose=doc.querySelector('.close');
+const overlay=doc.querySelector('.overlay');
+
+menuOpen.addEventListener('click', () =>{
+    overlay.classList.add("overlay--active");
+});
+
+menuClose.addEventListener('click', () =>{
+    overlay.classList.remove("overlay--active");
+});
+
+</script>
+</body>
+</html>
