@@ -110,3 +110,34 @@ body{
         display: initial;
     }
 }
+
+.top{
+    display: grid;
+    grid-gap: 20px;
+    background: url("https://images.pexels.com/photos/4466492/pexels-photo-4466492.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4466492.jpg&fm=jpg");
+    padding: 20px;
+}
+ul{
+    list-style-type: none;  
+}
+h1{
+    color: black;
+    padding: 20px;
+}
+
+.container{
+    display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 20px;
+  text-align: center;
+}
+p{
+    padding: 10px;
+}
+i{
+    margin-bottom: 20px;
+}
+h3{
+    border-style: solid;
+}
